@@ -1,9 +1,11 @@
 import React from 'react';
-import { Header, About, Work, Skills, Testimonial, Footer } from './Container';
+import { Navbar } from './Components';
+import {Header, About, Work, Skills, Testimonial, Footer} from './Container';
 
 const App = () => {
   return (
     <div className='container'>
+      <Navbar />
       <Header />
       <About />
       <Work />
