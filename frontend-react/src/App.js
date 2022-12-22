@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from './Components';
-import {Header, About, Work, Skills, Testimonial, Footer} from './Container';
+import { Header, About, Work, Skills, Testimonial, Footer } from './Container';
 
 const App = () => {
   return (
