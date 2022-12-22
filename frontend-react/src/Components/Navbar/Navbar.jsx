@@ -1,9 +1,14 @@
 import React from 'react'
 import './Navbar.scss'
+import { images } from '../../Constants'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav>
+      <div>
+        <img src={ images.logo } alt="Website Logo" />
+      </div>
+    </nav>
   )
 }
 
