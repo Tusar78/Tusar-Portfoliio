@@ -39,7 +39,7 @@
 
   li {
     margin: 0 1rem;
-    cursor: pointer;    
+    cursor: pointer;
     flex-direction: column;
 
     div {
@@ -55,7 +55,7 @@
       flex-direction: column;
       text-transform: uppercase;
       font-weight: 500;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         color: var(--secondary-color);
@@ -104,11 +104,11 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background: url('../../assets/images/bgWhite.png');
+    background: url("../../assets/images/bgWhite.png");
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
-    box-shadow: 0 0 20px rgba($color: #A8A8A8, $alpha: 0.15);
+    box-shadow: 0 0 20px rgba($color: #a8a8a8, $alpha: 0.15);
 
     svg {
       width: 35px;
@@ -127,7 +127,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
-      
+
       li {
         margin: 1rem;
 
@@ -144,6 +144,14 @@
           }
         }
       }
-    }    
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    display: none;
   }
 }

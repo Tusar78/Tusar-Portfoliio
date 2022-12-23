@@ -5,7 +5,7 @@ import "./Navbar.scss";
 import { images } from "../../Constants";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
