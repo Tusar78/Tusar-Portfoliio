@@ -5,7 +5,7 @@ import "./Navbar.scss";
 import { images } from "../../Constants";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -32,13 +32,15 @@ const Navbar = () => {
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
-            {["Home", "About", "Work", "Skills", "Contact"].map((item) => (
-              <li key={item}>
-                <a href={`#${item}`} onClick={() => setToggle(false)}>
-                  {item}
-                </a>
-              </li>
-            ))}
+            <ul>
+              {["Home", "About", "Work", "Skills", "Contact"].map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </motion.div>
         )}
       </div>
