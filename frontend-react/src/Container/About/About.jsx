@@ -30,18 +30,16 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I Know That
-        <span>Good Design</span>
+        I Know That <span>Good App</span>
         <br />
-        means
-        <span>Good Business</span>
+        means <span>Good Business</span>
       </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
             key={about.title + index}
