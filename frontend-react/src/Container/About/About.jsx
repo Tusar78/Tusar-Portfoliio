@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { images } from "../../Constants";
 import "./About.scss";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -8,6 +7,7 @@ import { client, urlFor } from "../../client";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
+  console.log(abouts);
 
   useEffect(() => {
     const query = '*[_type == "abouts"]';
@@ -30,7 +30,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
