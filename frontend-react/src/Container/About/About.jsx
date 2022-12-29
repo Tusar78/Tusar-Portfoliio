@@ -8,10 +8,14 @@ import { client, urlFor } from "../../client";
 const About = () => {
   const [abouts, setAbouts] = useState([]);
   console.log(abouts);
+  console.log(client);
 
   useEffect(() => {
-    const query = '*[_type == "abouts"]';
-    client.fetch(query).then((data) => setAbouts(data));
+    const query = '*[__type == "abouts"]';
+    client.fetch(query).then((data) => {
+      console.log(data);
+      setAbouts(data);
+    });
   }, []);
   return (
     <>
